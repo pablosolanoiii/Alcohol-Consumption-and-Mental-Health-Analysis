@@ -85,11 +85,6 @@ Nesarc_Data$DRINK_DESPITE_MH <- factor(
   labels = c("Yes", "No")
 )
 
-<<<<<<< HEAD
-# Overal mental health functioning score 
-=======
-# Overall mental health functioning score 
->>>>>>> cbf4e36 (Fixed variables after testing)
 Nesarc_Data$MH_SCORE <- Nesarc_Data$NBMCS
 
 #Nesarc_Data$AGE is an acceptable name
@@ -97,21 +92,6 @@ Nesarc_Data$MH_SCORE <- Nesarc_Data$NBMCS
 #Age at which they started drinking 
 Nesarc_Data$START_AGE <- Nesarc_Data$S2AQ16A 
 
-<<<<<<< HEAD
-table(Nesarc_Data$DRANK_PAST_YEAR, useNA = "ifany")
-table(Nesarc_Data$DRINK_FREQ, useNA = "ifany")
-table(Nesarc_Data$DEPRESS_FREQ_4W, useNA = "ifany")
-table(Nesarc_Data$DRINK_DESPITE_MH, useNA = "ifany")
-
-summary(Nesarc_Data$NUM_DRINKS)
-summary(Nesarc_Data$MH_SCORE)
-summary(Nesarc_Data$AGE)
-summary(Nesarc_Data$START_AGE)
-
-View(Nesarc_Data)
-
-=======
 View(Nesarc_Data)
 
 write.csv(Nesarc_Data, "Nesarc_Data_Clean.csv", row.names = FALSE)
->>>>>>> cbf4e36 (Fixed variables after testing)
