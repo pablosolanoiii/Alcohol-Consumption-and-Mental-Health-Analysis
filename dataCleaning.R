@@ -1,6 +1,5 @@
 # Pablo Solano III 
 Nesarc_Data <- read.csv("~/Code/lodestar/MATH314/GroupProject/Nesarc_Data.csv", header =TRUE)
-table(Nesarc_Data$S2BQ1A16)
 
 # Data cleaning 
 
@@ -92,6 +91,25 @@ Nesarc_Data$MH_SCORE <- Nesarc_Data$NBMCS
 #Age at which they started drinking 
 Nesarc_Data$START_AGE <- Nesarc_Data$S2AQ16A 
 
+summary(Nesarc_Data[, c(
+  "DRINK_PAST_YTD",
+  "DRINK_FREQ",
+  "NUM_DRINKS",
+  "SAD_PAST_MTD",
+  "DRINK_DESPITE_MH",
+  "MH_SCORE",
+  "AGE",
+  "START_AGE"
+)])
+
+table(Nesarc_Data$DRINK_PAST_YTD, useNA = "ifany")
+table(Nesarc_Data$DRINK_FREQ, useNA = "ifany")
+table(Nesarc_Data$SAD_PAST_MTD, useNA = "ifany")
+table(Nesarc_Data$DRINK_DESPITE_MH, useNA = "ifany")
+
 View(Nesarc_Data)
 
 write.csv(Nesarc_Data, "Nesarc_Data_Clean.csv", row.names = FALSE)
+
+Nesarc_Data_Clean <- read.csv("Nesarc_Data_Clean.csv", header = TRUE)
+View(Nesarc_Data_Clean)

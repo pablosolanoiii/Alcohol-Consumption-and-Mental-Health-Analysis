@@ -1,3 +1,4 @@
 Nesarc_Data.csv filter=lfs diff=lfs merge=lfs -text
 Nesarc_SUBData.csv filter=lfs diff=lfs merge=lfs -text
 Nesarc_SUBData2.csv filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
