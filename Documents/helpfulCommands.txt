@@ -1,0 +1,4 @@
+These are helpful commands for this project 
+
+Nesarc_Data <- read.csv("~/Code/lodestar/MATH314/GroupProject/Nesarc_Data.csv", header=FALSE)
+
